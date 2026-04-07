@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -6,39 +6,53 @@
 body {
     background-color: blue;
 }
- img {
+
+img {
     width: 100%;
-    
 }
 
 .padding-10 {
     padding: 10px;
 }
 
-/*  tablet main width: 600px */
+/* clear float column */
 .row {
     clear: both;
 }
+
+/* tablet min-width: 600px */
 @media screen and (min-width: 600px) {
+    /* element selector body */
     body {
         background-color: green;
     }
-    .col-lg-50 {
+
+    .col-md-50 {
         width: 50%;
         float: left;
     }
 
-    
-    /* desktop min width: 922px */
-    @media screen and (min-width: 922px) {
-        body {
-            background-color: red;
-        }
+    .col-md-100 {
+        width: 100%;
     }
+}
+
+/* desktop min-width: 992px */
+@media screen and (min-width: 992px) {
+    /* element selector body */
+    body {
+        background-color: red;
+        color: white;
+    }
+
     /* class selector */
     .col-lg-25 {
         width: 25%;
         float: left;
     }
 
+    .col-lg-50 {
+        width: 50%;
+        float: left;
+    }
 }
